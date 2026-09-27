@@ -1,0 +1,183 @@
+[
+  {
+    "id": "q1",
+    "question": "What does backpropagation compute in a neural network?",
+    "ground_truth": "Backpropagation computes the gradient of the loss function with respect to each weight in the network.",
+    "type": "single-hop",
+    "source_docs": ["backpropagation"]
+  },
+  {
+    "id": "q2",
+    "question": "What is the universal approximation theorem about?",
+    "ground_truth": "The universal approximation theorem states that a feedforward neural network with enough hidden units can approximate any continuous function on a compact set to arbitrary accuracy.",
+    "type": "single-hop",
+    "source_docs": ["universal_approximation_theorem"]
+  },
+  {
+    "id": "q3",
+    "question": "Who won the 2018 Turing Award?",
+    "ground_truth": "Geoffrey Hinton, Yann LeCun, and Yoshua Bengio won the 2018 Turing Award as co-winners for their work on deep learning.",
+    "type": "single-hop",
+    "source_docs": ["turing_award"]
+  },
+  {
+    "id": "q4",
+    "question": "What is a multilayer perceptron?",
+    "ground_truth": "A multilayer perceptron is a feedforward artificial neural network with one or more hidden layers of fully connected neurons that use non-linear activation functions.",
+    "type": "single-hop",
+    "source_docs": ["multilayer_perceptron"]
+  },
+  {
+    "id": "q5",
+    "question": "What is gradient descent used for?",
+    "ground_truth": "Gradient descent is an optimization algorithm used to minimize a function, such as a neural network's loss function, by iteratively moving in the direction of steepest descent.",
+    "type": "single-hop",
+    "source_docs": ["gradient_descent"]
+  },
+  {
+    "id": "q6",
+    "question": "Which architecture won the 2012 ImageNet competition, and who were its authors?",
+    "ground_truth": "AlexNet won the 2012 ImageNet competition, authored by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton.",
+    "type": "single-hop",
+    "source_docs": ["alexnet"]
+  },
+  {
+    "id": "q7",
+    "question": "What does backpropagation compute, and what optimization algorithm uses that quantity to update network weights?",
+    "ground_truth": "Backpropagation computes the gradient of the loss function with respect to each weight; gradient descent uses those gradients to update the weights.",
+    "type": "multi-hop",
+    "source_docs": ["backpropagation", "gradient_descent"]
+  },
+  {
+    "id": "q8",
+    "question": "What is the relationship between a multilayer perceptron and an artificial neural network?",
+    "ground_truth": "A multilayer perceptron is a specific feedforward subclass of artificial neural network, characterized by fully connected layers and non-linear activation functions.",
+    "type": "multi-hop",
+    "source_docs": ["multilayer_perceptron", "artificial_neural_network"]
+  },
+  {
+    "id": "q9",
+    "question": "What optimization algorithm is typically used to train a multilayer perceptron, and what does that algorithm require from backpropagation?",
+    "ground_truth": "Gradient descent is typically used to train a multilayer perceptron, and it requires the gradients computed by backpropagation to update the weights.",
+    "type": "multi-hop",
+    "source_docs": [
+      "multilayer_perceptron",
+      "gradient_descent",
+      "backpropagation"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "Which 2018 Turing Award winner is most associated with convolutional neural networks, and what was his landmark CNN contribution?",
+    "ground_truth": "Yann LeCun is most associated with convolutional neural networks; his landmark contribution was LeNet, an early CNN for handwritten digit recognition.",
+    "type": "multi-hop",
+    "source_docs": [
+      "turing_award",
+      "yann_lecun",
+      "convolutional_neural_network"
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "What architecture type is AlexNet an instance of, and why is that architecture well-suited to image data?",
+    "ground_truth": "AlexNet is a convolutional neural network (CNN); CNNs exploit spatial locality and weight sharing, making them well-suited for image data.",
+    "type": "multi-hop",
+    "source_docs": ["alexnet", "convolutional_neural_network"]
+  },
+  {
+    "id": "q12",
+    "question": "How did Ilya Sutskever's work connect to the broader deep learning movement associated with Geoffrey Hinton?",
+    "ground_truth": "Ilya Sutskever was a PhD student of Geoffrey Hinton and co-authored AlexNet, contributing to the deep learning revival.",
+    "type": "multi-hop",
+    "source_docs": ["ilya_sutskever", "geoffrey_hinton", "deep_learning"]
+  },
+  {
+    "id": "q13",
+    "question": "What is the relationship between deep learning and the universal approximation theorem?",
+    "ground_truth": "The universal approximation theorem provides theoretical justification for why deep neural networks can represent complex functions, which deep learning exploits in practice.",
+    "type": "multi-hop",
+    "source_docs": ["deep_learning", "universal_approximation_theorem"]
+  },
+  {
+    "id": "q14",
+    "question": "Which two 2018 Turing Award winners are most associated with convolutional neural networks and recurrent neural networks respectively?",
+    "ground_truth": "Yann LeCun is most associated with convolutional neural networks; Yoshua Bengio is most associated with recurrent neural networks and sequence models.",
+    "type": "multi-hop",
+    "source_docs": [
+      "turing_award",
+      "yann_lecun",
+      "yoshua_bengio",
+      "convolutional_neural_network",
+      "recurrent_neural_network"
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "A 2018 Turing Award winner affiliated with the University of Toronto helped popularize an algorithm in a 1986 paper. Name the algorithm, the network type it trains, and the structural feature of that network that necessitates the algorithm.",
+    "ground_truth": "The algorithm is backpropagation, popularized by Geoffrey Hinton (University of Toronto) in the 1986 paper. It trains multilayer perceptrons, whose hidden layers require backward propagation of error gradients via the chain rule.",
+    "type": "multi-hop",
+    "source_docs": [
+      "geoffrey_hinton",
+      "turing_award",
+      "backpropagation",
+      "multilayer_perceptron"
+    ]
+  },
+  {
+    "id": "q16",
+    "question": "Trace the full training pipeline for a convolutional neural network: what computes the gradients, what consumes them to update weights, and what architectural property of CNNs makes this efficient?",
+    "ground_truth": "Backpropagation computes the gradients; gradient descent consumes them to update weights; CNNs' weight sharing and local connectivity reduce the number of parameters, making backpropagation efficient.",
+    "type": "multi-hop",
+    "source_docs": [
+      "convolutional_neural_network",
+      "backpropagation",
+      "gradient_descent",
+      "alexnet"
+    ]
+  },
+  {
+    "id": "q17",
+    "question": "Three researchers shared the 2018 Turing Award. For each, name one architecture or technique they are most associated with and explain how it connects to deep learning.",
+    "ground_truth": "Geoffrey Hinton — backpropagation and multilayer perceptrons; Yann LeCun — convolutional neural networks; Yoshua Bengio — recurrent neural networks and representation learning. All three contributions are foundational to deep learning.",
+    "type": "multi-hop",
+    "source_docs": [
+      "turing_award",
+      "geoffrey_hinton",
+      "yann_lecun",
+      "yoshua_bengio",
+      "deep_learning"
+    ]
+  },
+  {
+    "id": "q18",
+    "question": "Why can a multilayer perceptron be trained with backpropagation, but a single-layer perceptron with a step activation cannot? Relate this to the universal approximation theorem.",
+    "ground_truth": "A multilayer perceptron uses differentiable non-linear activation functions, enabling gradient computation via backpropagation; a step function is non-differentiable, so gradients cannot be computed. The universal approximation theorem holds for multilayer feedforward networks, not single-layer step perceptrons.",
+    "type": "multi-hop",
+    "source_docs": [
+      "multilayer_perceptron",
+      "backpropagation",
+      "universal_approximation_theorem"
+    ]
+  },
+  {
+    "id": "q19",
+    "question": "What chain of reasoning connects Geoffrey Hinton to gradient descent, naming the intermediary algorithm and the specific quantity that links them?",
+    "ground_truth": "Hinton co-authored the 1986 backpropagation paper; backpropagation computes the gradient of the loss with respect to each weight; gradient descent uses those gradients to update the network weights. The intermediary algorithm is backpropagation and the linking quantity is the gradient.",
+    "type": "multi-hop",
+    "source_docs": ["geoffrey_hinton", "backpropagation", "gradient_descent"]
+  },
+  {
+    "id": "q20",
+    "question": "Ilya Sutskever is connected to Geoffrey Hinton, AlexNet, and the deep learning revival. Explain the full chain: his academic relationship to Hinton, his role in AlexNet, and how AlexNet's CNN architecture plus backpropagation training demonstrated deep learning's viability.",
+    "ground_truth": "Ilya Sutskever was a PhD student of Geoffrey Hinton and co-authored AlexNet, the 2012 ImageNet winner. AlexNet is a convolutional neural network trained with backpropagation and stochastic gradient descent on GPUs, and its dominant performance demonstrated the viability of deep learning for large-scale vision tasks.",
+    "type": "multi-hop",
+    "source_docs": [
+      "ilya_sutskever",
+      "geoffrey_hinton",
+      "alexnet",
+      "convolutional_neural_network",
+      "backpropagation",
+      "deep_learning"
+    ]
+  }
+]

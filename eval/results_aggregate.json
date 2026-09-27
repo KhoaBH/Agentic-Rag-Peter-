@@ -1,0 +1,46 @@
+{
+  "n_runs": 3,
+  "runs": [
+    {
+      "total_questions": 20,
+      "naive_score": 16,
+      "agentic_score": 20,
+      "naive_pct": 80.0,
+      "agentic_pct": 100.0,
+      "delta_pct": 20.0,
+      "multihop_count": 14,
+      "multihop_naive_pct": 71.4,
+      "multihop_agentic_pct": 100.0,
+      "run": 1
+    },
+    {
+      "total_questions": 20,
+      "naive_score": 14,
+      "agentic_score": 20,
+      "naive_pct": 70.0,
+      "agentic_pct": 100.0,
+      "delta_pct": 30.0,
+      "multihop_count": 14,
+      "multihop_naive_pct": 57.1,
+      "multihop_agentic_pct": 100.0,
+      "run": 2
+    },
+    {
+      "total_questions": 20,
+      "naive_score": 18,
+      "agentic_score": 20,
+      "naive_pct": 90.0,
+      "agentic_pct": 100.0,
+      "delta_pct": 10.0,
+      "multihop_count": 14,
+      "multihop_naive_pct": 85.7,
+      "multihop_agentic_pct": 100.0,
+      "run": 3
+    }
+  ],
+  "average_naive_pct": 80.0,
+  "average_agentic_pct": 100.0,
+  "average_delta_pct": 20.0,
+  "average_multihop_naive_pct": 71.4,
+  "average_multihop_agentic_pct": 100.0
+}
